@@ -1,0 +1,297 @@
+! + tab                 : 기본특 짜줌
+q*3 + tab               : q테크 3개 만들어줌
+dl>(dt+dd)*3 + tab      : dl안에 dt dd 3개씩 만들어줌
+
+---------------------------------------------------------------------------------------------------------------------
+
+<h1> ~ <h6>       : 제목 / 숫자가 높을 수록 낮은 단계
+<p></p>	          : 문단 / 각각 줄바꿈이 됨 (기본 스타일일 때)
+<br>              : 줄바꿈 / 닫는 태그 필요 없음. <br/>, <br />와 혼용되기도 함
+<hr>              : 가로줄 / 닫는 태그 필요 없음
+&nbsp;            : 공백 / (스페이스)	스페이스를 강제할 때 사용
+
+---------------------------------------------------------------------------------------------------------------------
+
+<strong></strong> : 중요한 내용임을 명시
+<em></em>         :	강조할 내용임을 명시
+    <p>
+      <strong>경고!</strong> 이것은 매우 위험합니다.
+    </p>
+    <p>
+      나는 <em>당근</em>을 사랑합니다.
+      나는 당근을 <em>사랑</em>합니다.
+    </p>
+
+
+<sup></sup>	        : 위 첨자	/ 지수, 서수
+<sub></sub>	        : 아래 첨자	/ 각주, 변수, 화학식
+    <p>
+      x<sup>3</sup>  
+    </p>
+    <p>
+        H<sub>2</sub>o
+    </p>
+
+
+<u></u>              : 밑줄 / 철자 오류 표시 /	예전에는 밑줄 용도로 사용
+<s></s>              : 중간빗금 / 더 이상 유효하지 않은 정보 표시	
+    <p>
+      <u>u태그</u>입니다.
+    </p>
+    <p>
+      <s>s태그</s>입니다.
+    </p>
+
+---------------------------------------------------------------------------------------------------------------------
+
+<blockquote></blockquote> : 비교적 긴 인용문에 사용	/ cite 속성으로 출처 표시
+<cite></cite>	            : 저작물의 출처 표기/ 제목을 반드시 포함
+<mark></mark>         	  : 인용문 중 하이라이트 또는 사용자 행동과 연관된 곳 표시시
+    <blockquote cite="사이트주소">
+      <p>
+        HTML &lt;blockquote&gt; 요소는 안쪽의 텍스트가 긴 <mark>인용문</mark>임을 나타냅니다. <br>
+        주로 들여쓰기를 한 것으로 그려집니다. (외형을 바꾸는 법은 사용 일람을 참고하세요) <br>
+        인용문의 출처 URL은 cite 특성으로, 출처 텍스트는 &lt;cite&gt; 요소로 제공할 수 있습니다.
+      </p>
+    </blockquote>
+    <cite>&lt;blockquote&gt;: 인용 블록 요소</cite> from MDN
+
+<q></q>                     :	비교적 짧은 인용문에 사용	cite 속성으로 출처 표시
+    <p>
+      <strong>q</strong> 태그에 대해 MDN 문서는
+      <q cite="https://developer.mozilla.org/ko/docs/Web/HTML/Element/q"
+      >HTML &lt;q&gt;요소는 둘러싼 텍스트가 짧은 <br> 인라인 <mark>인용문</mark>이라는것을 나타냅니다.</q>
+      라고 설명하고 있습니다.
+      <!-- 엔터 없애기 위해 괄호를 아래로 가지고 내려옴옴 -->
+    </p>
+
+
+<abbr></abbr>               :	준말/머릿글자 표시 / title 속성으로 원래 형태 표시
+    <p>
+      <strong>abbr</strong> 태그를 사용하여
+      <abbr title="HyperText Markup Language">HTML</abbr>
+      을 표기한 문단입니다. 소스 보기로 코드를 확인해보세요!
+    </p>
+
+---------------------------------------------------------------------------------------------------------------------
+
+<ul></ul>	                  : 순서가 없는 목록	
+<ol></ol>                   :	순서가 있는 목록 /	type, start 속성 사용 가능
+<li></li>                   :	목록 아이템	ul, ol 태그의 1촌 자식으로 이 태그만 가능
+<dl></dl>
+    <ol type="I" start="3">
+      <li>재료 준비
+        <ul>
+          <li>밥</li>
+          <li>계란</li>
+          <li>파</li>
+          <li>간장</li>
+        </ul>
+      </li>
+      <li>파를 기름에 볶기</li>
+      <li>밥 넣고 볶기</li>
+      <li>계란을 넣고 스크램블</li>
+      <li>간장을 넣고 마저 볶아 완성</li>
+    </ol>
+
+<dt></dt>                   :	정의
+<dd></dd>                   :	정의에 대한 설명명
+    <dl>
+      <dt>프로그래밍</dt>
+      <dd>컴퓨터 프로그램을 작성하는 일</dd>
+
+      <dt>넓이</dt>
+      <dt>광</dt>
+      <dt>면적</dt>
+      <dd>일정한 평면에 걸쳐 있는 공간이나 범위의 크기</dd>
+
+      <dt>사과</dt>
+      <dd>사과나무의 열매</dd>
+      <dd>자기의 잘못을 인정하고 용서를 빎</dd>
+    </dl>
+
+---------------------------------------------------------------------------------------------------------------------
+src	                         : 원본파일 경로/ 절대경로 또는 상대경로
+alt	                         : 대체 텍스트	스크린 리더, 원본파일 무효시
+title		                     : 툴팁	alt의 대체제나 반복이 되어서는 안됨
+width		                     : 너비 /	픽셀 단위의 정수
+height		                   : 높이 /	픽셀 단위의 정수
+
+<img src="(이미지 파일 경로)" alt="(대체 텍스트)" title="(툴팁 텍스트)">
+    <img 
+    src="https://showcases.yalco.kr/html-css/01-05/coding.png" 
+    alt="작동중인 컴퓨터" 
+    title="프로그래밍"
+    width="300"
+    height="300">
+
+=> 도형 모양의 이미지에 링크 설정방법    
+    <img src="https://showcases.yalco.kr/html-css/01-05/map.png" usemap="#image-map">
+      <map name="image-map">
+        <area target="_blank" alt="꼬야" title="꼬야" href="https://www.image-map.net/" coords="" shape="rect">
+      </map>
+---------------------------------------------------------------------------------------------------------------------
+
+<table></table>	              : 테이블	
+<caption></caption>     	    : 표 설명 또는 제목	선택사항
+<tr></tr>                     :	테이블의 행	
+<td></td>                     :	테이블의 데이터 셀
+
+=> table>caption+(tr>td*3)*3
+    <table>
+      <caption>표제목</caption>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </table>
+
+<thead></thead>                 :	테이블의 헤더 부분	/ <tbody> 앞에 와야 함
+<tbody></tbody>                 :	테이블의 본문	본 내용을 담음
+<tfoot></tfoot>                 :	테이블의 푸터 부분 / <tbody> 뒤에 와야 함
+<th></th>                       :	열 또는 행의 헤더 /	scope 속성으로 row, col 중 선택
+
+    <table>
+      <caption>웹개발 공부 기록</caption>
+      <thead>
+        <tr>
+          <th scope="col">과목</th>
+          <th scope="col">월</th>
+          <th scope="col">화</th>
+          <th scope="col">수</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">HTML</th>
+          <td>60분</td>
+          <td>60분</td>
+          <td>0분</td>
+        </tr>
+        <tr>
+          <th scope="row">CSS</th>
+          <td>0분</td>
+          <td>30분</td>
+          <td>60분</td>
+        </tr>
+        <tr>
+          <th scope="row">JS</th>
+          <td>0분</td>
+          <td>0분</td>
+          <td>60분</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="row">총 시간</th>
+          <td>60분</td>
+          <td>90분</td>
+          <td>120분</td>
+        </tr>
+      </tfoot>
+    </table>
+
+
+colspan                               :	열 병합
+rowspan                               :	행 병합
+    <table>
+      <tr>
+        <td>1</td>
+        <td colspan="2">2</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td rowspan="3">3</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td colspan="2" rowspan="2">4</td>
+      </tr>
+      <tr>
+        <td>1</td>
+      </tr>
+    </table>
+
+    
+<colgroup></colgroup>                   :	표에 열을 묶어서 속성 부여
+                                          <caption>보다 뒤, 그 외 요소보다 앞에 와야 함
+<col>                                   : 열의 묶음	span 속성으로 열 수 지정    
+    <table>
+      <colgroup>
+        <col class="weekend">
+        <col span="5">
+        <col class="weekend">
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">일</th>
+          <th scope="col">월</th>
+          <th scope="col">화</th>
+          <th scope="col">수</th>
+          <th scope="col">목</th>
+          <th scope="col">금</th>
+          <th scope="col">토</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+        </tr>
+        <tr>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+        </tr>
+        <tr>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+        </tr>
+        <tr>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+          <td>_</td>
+        </tr>
+      </tbody>
+    </table>
+---------------------------------------------------------------------------------------------------------------------
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+
+
