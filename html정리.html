@@ -226,7 +226,7 @@ rowspan                               :	행 병합
       </tr>
     </table>
 
-    
+
 <colgroup></colgroup>                   :	표에 열을 묶어서 속성 부여
                                           <caption>보다 뒤, 그 외 요소보다 앞에 와야 함
 <col>                                   : 열의 묶음	span 속성으로 열 수 지정    
@@ -288,10 +288,218 @@ rowspan                               :	행 병합
     </table>
 ---------------------------------------------------------------------------------------------------------------------
 
+<a href="(연결할 주소)" target="(링크를 열 곳 옵션)" alt="대체설명명"></a>
+=> target 속상값값
+  _self	           : 현재 창 /	기본
+  _blank	         : 새 창	/ 텍스트나 내부 이미지의 alt 등으로 명시 필요
+  _parent          :	부모 프레임	/ <iframe> 사용시
+  _top	           : 최상위 프레임	/ <iframe> 사용시
+
+  +) <a href="#target_500"></a> : target_500인 id로 이동동
+
+=> href 값 앞부분
+  mailto:          - 이메일 링크
+  tel:             - 전화번호 연결
+    <address>
+      웹사이트 주소: <a href="https://www.yalco.kr">yalco.kr</a> <br>
+      오피스: 전산시 개발구 코딩동 123번길 45 <br>
+      전화 <a href="tel:010-1234-5678">010-1234-5678</a> <br>
+      이메일: <a href="mailto:yalco@kakao.com">yalco@kakao.com</a>
+    </address>
+
+---------------------------------------------------------------------------------------------------------------------
+
+<form>	            : 정보를 제출하기 위한 태그들을 포함	// autocomplete 속성: 자동완성 여부 (기본: on)
+<input>	            : 입력을 받는 요소 // type 속성을 통해 다양화
+<label>	            : 인풋 요소마다의 라벨 // for 속성값을 인풋 요소의 id와 연결. 인풋의 클릭 영역 확장
+<button>	          : 버튼 // type 속성에 submit(제출), reset(초기화), button(기본 동작 없음)
+
+<fieldset>    	    : 폼 태그 내 입력요소와 라벨들을 그룹화 //	disabled 속성: 포함된 입력요소 비활성화
+<legend>	          : 필드셋 요소의 제목 또는 설명	
+  
+    <form>
+      <fieldset>
+        <legend>반장</legend>
+
+        <label for="name_1">이름</label>
+        <input id="name_1" name="name_1" type="text">
+        <br><br>
+
+        <label for="age_2">나이</label>
+        <input id="age_1" name="age_1" type="number">
+      </fieldset>
+
+      <fieldset disabled>
+        <legend>서기</legend>
+  
+        <label for="name_3">이름</label>
+        <input id="name_3" name="name_3" type="text">
+        <br><br>
+  
+        <label for="age_3">나이</label>
+        <input id="age_3" name="age_3" type="number">
+      </fieldset>
+    </form>
+
+---------------------------------------------------------------------------------------------------------------------
+
+1. 텍스트 관련 인풋 속성
+  type                : text, password, search, tel 각 항목에 따라 설정됨
+  placeholder	        : 빈 칸에 보이는 안내문	
+  maxlength           : 최대 길이	
+  minlength	          : 최소 길이	위반시 submit이 거부됨
+
+    <label for="txtIp">text</label> <br>
+    <input 
+      id="txtIp"
+      type="text"
+      placeholder="5자 이하"
+      maxlength="5"
+    >
+    <br><br>
+
+    <label for="pwdIp">password</label> <br>
+    <input
+      id="pwdIp"
+      type="password"
+      placeholder="4자 이상"
+      minlength="4"
+    >
+  
+2. 숫자 관련 인풋 속성들
+  type                    : number, range, date, datetime-local, month, time, week 각 항목에 따라 설정됨
+  min	                    : 최소값 // date 등 타입마다 형식 다름
+  max	                    : 최대값 // date 등 타입마다 형식 다름
+  step	                  : 간격
+    <label for="numIp">number</label> <br>
+    <input 
+      id="numIp"
+      type="number"
+      min="0"
+      max="10"
+    >
+
+3.  체크 관련 인풋 속성들
+  type	                  : checkbox(네모체크박스), radio(동그라미체크박스스)
+  checked                 : 체크박스 & 라디오	체크됨 여부
+  name	                  : 라디오 (다른 타입들에서도 사용)
+                              같은 이름일 경우 그룹으로 인식되서 1가지만 선택됨 / 여러 개 선택하고싶을 경우 다르게 
+  value	                  : 라디오 (다른 타입들에서도 사용)	각 옵션마다 실제로 넘겨질 값
+
+    <input id="cbIp" type="checkbox" checked>
+    <input type="radio" name="fruit" id="f_apple" value="apple" checked>
+    <input type="radio" name="fruit" id="f_orange" value="orange">
+
+
+4. 파일 인풋 속성들
+  type	                    : file(파일제출), hidden(숨김), email(이메일)
+  accept                    : 받아들일 수 있는 파일 형식	
+  multiple                  : 여러 파일 업로드 가능 여부
+
+    <input id="fileIp" type="file" accept="image/png, image/jpeg" multiple>
+    <input id="hdnIp" type="hidden">
+    <input id="emlIp" type="email">
+
+5. 기타 인풋 속성
+  - 타입: 텍스트트
+    value                    : 기존에 설정된 값이 입력
+    autofocus                : 선택하지 않아도 페이지를 열었을 때 자동으로 해당 칸이 선택되어 있음
+    readonly                 : placeholder로 넣은값을 제외하고는 읽을 수만 있는 값
+    required                 : 반드시 값을 넣어야 함
+    disabled                 : 입력불가, 입력하여도 값이 전송안됨
+    <label for="valIp">value</label> <br>
+    <input  id="valIp" type="text" value="지정됨">
+
+    <label for="afIp">autofocus</label> <br>
+    <input id="afIp" type="text" placeholder="자동 포커스됨" autofocus>
+
+    <label for="roIp">readonly</label> <br>
+    <input  id="roIp" type="text" value="읽기만 가능, 전송됨" readonly>
+
+    <label for="rqIp">required</label> <br>
+    <input id="rqIp" type="text" placeholder="필수입력!"  required >
+
+    <label for="daIp">disabled</label> <br>
+    <input  id="daIp"  type="text"  placeholder="입력불가, 전송 안됨" disabled>
+
+  - 체크박스
+    disabled                 : 선택 못하는 체크박스
+    <input type="radio" name="fruit" id="f_apple" value="apple" checked>
+    <input type="radio" name="fruit" id="f_grape" value="grape">
+    <input type="radio" name="fruit" id="f_orange" value="orange" disabled>
+
+---------------------------------------------------------------------------------------------------------------------
+
+1. <textarea> 전용 속성들
+  cols                    : 글자수 단위의 너비	// 기본값 20
+  rows                    : 표시되는 줄 수	
+    <textarea id="message" cols="64" rows="5"></textarea>
+
+
+2. 옵션 관련 속성들
+  multiple	<select>      : 다중 선택 가능. 드랍다운 대신 상자로 표시
+            <optgroup>    : select-option 사이의 그룹화로 카테고리처럼 만듦듦
+  selected	<option>      : 선택됨 ( checkbox, radio의 checked처럼 )
+  value   	<option>      : 실제로 전송될 값
+  list	    <input>       : 연결할 <datalist>의 ID
+    <select id="lang" multiple>
+      <option value="">-- 언어 선택 --</option>
+      <option value="html" selected>HTML</option>
+      <option value="css">CSS</option>
+      <option value="js">자바스크립트</option>
+      <option value="ts">타입스크립트</option>
+    </select>
+
+    <select id="shopping">
+      <optgroup label="과일">
+        <option value="f_apl">사과</option>
+        <option value="f_grp">포도</option>
+        <option value="f_org">오렌지</option>
+      </optgroup>
+    </select>
+
+    <label for="job">현재 직업</label> <br>
+    <input id="job" list="jobs">
+    <datalist id="jobs">
+      <option value="학생">
+      <option value="디자이너">
+      <option value="퍼블리셔">
+      <option value="개발자">
+    </datalist>
+
+
+3. <progress> 태그 속성들
+  max                     :	최대값 // 기본: 1
+  value	                  : 진행 수치 // 자바스크립트로 변경
+    <progress id="progressBar" max="100"> 0%</progress>
+
+
+4. <meter> 태그 속성들
+  min, max                : 최소값과 최대값	
+  low, high               :	전체 범위를 3등분하는 두 수치	
+  optimum	                : 이상적인 값 //	3개의 구간 중 한 곳에 위치
+  value	                  : 실제 값
+    <meter min="0" max="100" low="33" high="67" optimum="50" value="20">20달러</meter>
+      => 최소 0 최대 100인 곳에서, 범위를 33/67로 3등분하고, 최적값 50으로 지정하고, 적용값을 20으로 적용
+
+---------------------------------------------------------------------------------------------------------------------
+<pre></pre>                : 입력한 값이 그대로 나옴 (띄어쓰기 같은 것들)
+<iframe></iframe>          : 웹사이트 안에 또 다른 웹사이트를 넣는 방법
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ffENjt7aEdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <kbd></kbd>              : Ctrl + C 와 같이 키보드 입력을 나타낼 때 사용
+  <dfn></dfn>              : 특정 맥락에서 정의, 설명하고 있는 용어를 나타낼 때 사용
+  <small></small>          : 이와 같이 텍스트를 작게 표시하는데 사용
+
+---------------------------------------------------------------------------------------------------------------------
+
+
 
 
 
 ---------------------------------------------------------------------------------------------------------------------
 
 
+
+
+---------------------------------------------------------------------------------------------------------------------
 
