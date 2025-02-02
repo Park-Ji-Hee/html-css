@@ -197,6 +197,59 @@ padding 속성 ( 안쪽 여백 )  	가로만 적용, 세로는 배경색만	    
 ==> inline은 해당 컨텐츠만 담음
 ** 목록창에서 해당 컨텐츠를 정확히 누르게 할 때는 inline  // 근처만 가도 클릭이 가능하게 할 때는 inline-block <== 컨텐츠들이 일직선 상에 있다고 할 때때
 
+-----------------------------------------------------------------
+
+vw                : 윈도우창 전체대비 가로너비
+vh                : 윈도우창 전체대비 세로높이
+vmax              : 윈도우창 높이-너비 중 더 큰 것 기준으로 백분율
+vmin              : 윈도우창 높이-너비 중 작은 것 기준으로 백분율
+calc(50% + 100px) : 50%인 것보다 100px 더 높이
+
+margin            : block 요소일 때, 2개 사이의 margin은 더 큰 요소 적용됨(2개의 margin모두 적용되지 않음)
+margin: auto;     : block 요소일 때, 가로방향의 중간(부모요소의 중앙)으로 옮 // 나머지 칸을 꽉 채운다고 생각하면됨
+                    inline-block일 떄 ==> body{text-align:center;}
++) pading, margin 한 방향에만 적용 가능
+    /* margin-top: */
+    /* margin-bottom: */
+    /* margin-left: */
+    /* margin-right: */
+
+    /* padding-top */
+    /* padding-bottom */
+    /* padding-left */
+    /* padding-right */
+
+-----------------------------------------------------------------
+
+box-sizing: content-box;    : 박스 안 글자 영역만 width에 포함됨
+box-sizing: border-box;     : padding, border 영역까지 width에 포함됨
+
+border-radius               : 테두리 둥글게 하는 정도
+  /* border-top
+  border-bottom
+  border-left
+  border-right */
+
+overflow                    : 너무 커서 영역을 벗어나는 콘텐츠를 제어하는 수단
+  /* overflow: visible;     : 패딩상자 밖으로 넘친 부분을 보여줌
+     overflow: hidden;      : 패딩상자 밖으로 넘친 부분이 잘립 (잘린부분 안보임)
+     overflow: scroll;      : 패딩상자 밖으로 넘친 부분이 잘립 + 스크롤 생김(확인 가능)
+     overflow: auto;        : 콘텐츠들이 넘치면 자동으로 스크롤이 생김
+     overflow-x:            : 가로만 적용
+     overflow-y:            : 세로만 적용
+  */
+
+box-shadow: 
+  box-shadow: inset 여부 |offset-x | offset-y | blur-radius | spread-radius | color;
+  /* box-shadow: inset 4px 4px 4px -4px gray;  
+    : 안쪽으로그림자가 향하게(왼쪽상향방향) , 가로 4px, 세로 4px, 4px 흐리고, 4px만큼 도형보다 작은, 그레이 색깔 그림자 */
+
+---------------------------------------------------------------------
+
+
+
+
+
 
 
 

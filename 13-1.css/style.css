@@ -1,0 +1,27 @@
+.style-2{
+  color: blue;
+}
+
+span {
+  color: plum;
+}
+
+p {
+  color: olivedrab;
+}
+
+.blue {
+  color: blue;
+}
+
+.blue.dark{
+  color: darkblue;
+}
+
+#red{
+  color: red;
+}
+
+span, .blue.dark, #red {
+  text-decoration: underline;
+}

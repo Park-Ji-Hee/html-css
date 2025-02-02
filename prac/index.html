@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <p><strong>경고!</strong> 이것은 매우 위험합니다.</p>
+
+  <p>
+    나는 <em>당근</em>을 사랑합니다.<br>
+    나는 당근을 <em>사랑</em>합니다.
+  </p>
+  
+
+
+  <div>
+    1<sup>st</sup>, 2<sup>nd</sup>... n<sup>th</sup>, x<sup>n</sup> 등 지수나 서수를 위한 위 첨자를 표시할 때는<br>
+    sup 태그를 사용합니다.
+  </div>
+
+  <div>
+    Yalco<sub>1</sub>, H<sub>2O</sub>, x<sub>n</sub> 등 각주, 변수, 화학식을 위한 아래 첨자를 표시할 때는<br>
+    sub 태그를 사용합니다.    
+  </div>
+  
+
+
+  <p>
+    <strong>u</strong> 태그는 과거 <s>밑줄을 긋는</s> 용도로 사용되었으나 <br>
+    현재는<em>CSS 효과와 함께 철자 오류</em>  등을 강조하는 용도로 <u>사용됍니다.</u> <br>
+    <strong>s</strong> 태그는 더 이상 유효하지 않은 정보를 취소선과 함께 나타내죠.
+  </p>
+
+
+
+  <blockquote>
+    HTML &lt;blockquote&gt; 요소는 안쪽의 텍스트가 긴 인용문임을 나타냅니다. <br>
+    주로 들여쓰기를 한 것으로 그려집니다. (외형을 바꾸는 법은 사용 일람을 참고하세요) <br>
+    인용문의 출처 URL은 cite 특성으로, 출처 텍스트는 <cite> 요소로 제공할 수 있습니다.
+  </blockquote> 
+  <cite> &lt;blockquote&gt;: 인용 블록 요소 from MDN
+
+  <p>
+    q 태그에 대해 MDN 문서는 HTML  <q>요소는 둘러싼 텍스트가 짧은<br>
+    인라인 인용문이라는것을 나타냅니다.</q> 라고 설명하고 있습니다.<br>
+  </p>
+
+  <p>
+    본 페이지는 "<mark>인용문</mark>"이란 키워드로 검색한 결과입니다.<br>
+    <strong>mark</strong> 태그는 사용자의 행동과 관련 있는 부분<span class="color">(예: 검색 결과)</span>,<br>
+    또는 인용문에서 주시해야 할 부분들을 표시합니다.<br>
+  </p> 
+  <p>     
+    mark 태그 역시 CSS와 병행하여 사용해야 합니다
+  </p>
+
+
+
+  <p>
+    <strong>abbr</strong> 태그를 사용하여 <abbr title="Hypertext Markup Language">HTML</abbr> 을 표기한 문단입니다. 소스 보기로 코드를 확인해보세요!
+  </p>
+
+
+
+  <ul>
+    <li>이틀치 옷</li>
+    <li세면도구></li>
+    <li>수건</li>
+    <li>학습도구
+      <ul>
+        <li>노트북</li>
+        <li>필기구</li>
+        <li>교재</li>        
+      </ul>
+    </li>
+  </ul>
+
+  <ol type="a" start="5">
+    <li>재료 준비</li>
+    <ul type="square">
+      <li>밥</li>
+      <li>계란</li>
+      <li>파</li>
+      <li>간장</li>
+    </ul>
+    <li>파를 기름에 볶기</li>
+    <li>밥 넣고 볶기</li>
+    <li>계란을 넣고 스크램블</li>
+    <li>간장을 넣고 마저 볶아 완성</li>    
+  </ol>
+
+  <dl>
+    <dt> 프로그래밍</dt>
+    <dd>컴퓨터 프로그램을 작성하는 일</dd>
+    <dt>넓이</dt>
+    <dt>광</dt>
+    <dt>면적</dt>
+    <dd>일정한 평면에 걸쳐 있는 공간이나 범위의 크기</dd>
+    <dt>사과</dt>
+    <dd>사과나무의 열매</dd>
+    <dd>자기의 잘못을 인정하고 용서를 빎</dd>
+  </dl>
+
+
+
+  <img src="https://showcases.yalco.kr/html-css/01-05/coding.png" alt="desktop" title="programing" width="300px" height="200px">
+
+
+
+  <table>
+    <caption>1에서 9까지의 숫자들</caption>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </table>
+
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">과목</th>
+      <th scope="col">월</th>
+      <th scope="col">화</th>
+      <th scope="col">수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">HTML</th>
+      <td>60분</td>
+      <td>60분</td>
+      <td>0분</td>
+    </tr>
+    <tr>
+      <th scope="row">CSS</th>
+      <td>0분</td>
+      <td>30분</td>
+      <td>60분</td>
+    </tr>
+    <tr>
+      <th scope="row">JS</th>
+      <td>0분</td>
+      <td>0분</td>
+      <td>60분</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th scope="row">총 시간</th>
+      <td>60분</td>
+      <td>90분</td>
+      <td>120분</td>
+    </tr>
+  </tfoot>  
+  <caption>웹개발 공부 기록</caption>
+</table>
+
+
+
+<table>
+  <tr>
+    <td>1</td>
+    <td colspan="2">2</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td rowspan="3">3</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td colspan="2" rowspan="2" >4</td>
+  </tr>
+  <tr>
+    <td>1</td>
+  </tr>
+</table>
+
+
+<table>
+  <caption>시간표</caption>
+  <colgroup>
+    <col class="weekend">
+    <col span="5">
+    <col class="weekend">
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col">일</th>
+      <th scope="col">월</th>
+      <th scope="col">화</th>
+      <th scope="col">수</th>
+      <th scope="col">목</th>
+      <th scope="col">금</th>
+      <th scope="col">토</th>      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody> 
+</table>
+
+
+
+<a href="https://www.naver.com/" target="_blank"><img src="https://showcases.yalco.kr/html-css/01-07/yalco-logo.png" alt="yalco(새탭에서)" title="logo"></a>
+
+<a href="#target_15" target="_self"><p id="word_link">id 기준링크</p></a>
+<p id="target_1">id: target_1</p>
+<p id="target_2">id: target_2</p>
+<p id="target_3">id: target_3</p>
+<p id="target_4">id: target_4</p>
+<p id="target_5">id: target_5</p>
+<p id="target_6">id: target_6</p>
+<p id="target_7">id: target_7</p>
+<p id="target_8">id: target_8</p>
+<p id="target_9">id: target_9</p>
+<p id="target_10">id: target_10</p>
+<p id="target_11">id: target_11</p>
+<p id="target_12">id: target_12</p>
+<p id="target_13">id: target_13</p>
+<p id="target_14">id: target_14</p>
+<p id="target_15">id: target_15</p>
+<p id="target_16">id: target_16</p>
+<p id="target_17">id: target_17</p>
+<p id="target_18">id: target_18</p>
+<p id="target_19">id: target_19</p>
+<p id="target_20">id: target_20</p>
+
+
+웹사이트 주소: <address href="https://www.naver.com/">yalco.kr
+오피스: 전산시 개발구 코딩동 123번길 45
+전화 <a href="tel:010-1234-567">010-1234-5678</a>
+이메일: <a href="mailto:yalco@kakao.com">yalco@kakao.com</a>
+
+
+</body>
+</html>
