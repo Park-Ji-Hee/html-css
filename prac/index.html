@@ -283,12 +283,244 @@
   오피스: 전산시 개발구 코딩동 123번길 45
   전화 <a href="tel:010-1234-567">010-1234-5678</a>
   이메일: <a href="mailto:yalco@kakao.com">yalco@kakao.com</a>
+  <br><br>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+
+  <form>
+    autocomplete="off"
+  </form>
+  <label for="name">이름</label>
+  <input id="name" name="my-name" type="text">
+  <br>
+  <label for="age">나이</label>
+  <input id="age" name="my-age" type="number">
+  <br>
+  <button type="submit">제츨</button>
+  <button type="reset">초기화</button>
+  <button type="button">버튼</button>
+  <br><br>
+
+  <form>
+    <fieldset disabled>
+      <legend>반장</legend>
+      <label for="name1">이름</label>
+      <input id="name1" name="my-name1" type="text">
+      <label for="age1">이름</label>
+      <input id="age1" name="my-age1" type="number">
+    </fieldset>
+
+    <fieldset>
+      <legend>부반장</legend>
+      <label for="name2"></label>
+      <input id="name2" name="my-name2" type="text">
+      <label for="age2">이름</label>
+      <input id="age2" name="my-age2" type="number">
+    </fieldset>
+    
+    <fieldset>
+      <legend>서기</legend>
+      <label for="name3"></label>
+      <input id="name3" name="my-name3" type="text">
+      <label for="age3">이름</label>
+      <input id="age3" name="my-age3" type="number">
+    </fieldset>
+  </form>
+  <br><br>
+  <!-- ------------------------------------------------------------------------------------------------------------ -->
+
+  <form>
+    <label for="txtIp">text</label>
+    <input id="txtIp" name="text" type="text" placeholder="5자리 이하" maxlength="5">
+    <br>
+
+    <label for="pwdIp">password</label>
+    <input id="pwdIp" name="passwordd" type="password" placeholder="4자리 이상" minlength="4">
+    <br>
+    
+    <label for="srchIp">search</label>
+    <input id="srchIp" name="search" type="search">
+    <br>
+
+    <label for="tlIp">tel</label>
+    <input id="tlIp" name="tel" type="tel">
+    <br>
+
+    <label for="numIp">number</label>
+    <input id="numIp" name="number" type="number" min="1" max="10">
+    <br>
+
+    <label for="range1">range</label>
+    <input id="range1" name="range" type="range" step="10" min="100" max="150">
+    <br>
+
+    <label for="date1">date</label>
+    <input id="date1" name="date" type="date" min="2024-01-01" max="2025-12-31">
+    <br><br>
+
+    <h2>checkbox</h2>
+    <br>
+    <input 
+      id="checkbox1" 
+      type="checkbox" 
+      checked>
+    <label for="organnic">유기농</label>
+    <br>
+
+    <h2>radio</h2>
+
+    <input 
+      id="f_apple" 
+      name="fruite" 
+      type="radio" 
+      value="apple"
+      checked
+      >
+    <label for="f_apple">사과</label>
+
+    <input
+      type="radio"
+      name="fruit"
+      id="f_grape"
+      value="grape"
+    >
+    <label for="f_grape">포도</label>
+    <input
+      type="radio"
+      name="fruit"
+      id="f_orange"
+      value="orange"
+    >
+    <label for="f_orange">오렌지</label>
+    <br>
+
+    <input
+      type="radio"
+      name="vege"
+      id="v_carrot"
+      value="carrot"
+      checked
+    >
+    <label for="v_carrot">당근</label>
+    <input
+      type="radio"
+      name="vege"
+      id="v_tomato"
+      value="tomato"
+    >
+    <label for="v_tomato">토마토</label>
+    <input
+      type="radio"
+      name="vege"
+      id="v_eggplant"
+      value="eggplant"
+    >
+    <label for="v_eggplant">가지</label>
+    <br><br>
+
+    <label for="flip">file</label>
+    <input
+      type="file"
+      id="flip"
+      accept="image/png, image/jpeg"
+      multiple
+    >
+    <br>
+
+    <label for="hdnip">hidden</label>
+    <input
+      id="hndip"
+      type="hidden"
+    >
+    <br>
+
+    <label for="emlip">email</label>
+    <input
+      id="emlip"
+      type="email"
+    >
+    <br>
+
+    <button type="submit">제출</button>
+    <br><br>
+  </form>
+
+  <form>
+    <label for="valip">value</label>
+    <input
+      id="valip"
+      type="text"
+      value="지정됨"
+    >
+    <br>
+
+    <label for="atfip">autofocus</label>
+    <input
+      id="atfip"
+      type="text"
+      placeholder="자동 포커스됨"
+      autofocus
+    >
+    <br>
+    <label for="rdnlip">readonly</label>
+    <input
+      id="rdnlip"
+      type="text"
+      value="읽기만 가능, 전송됨"
+      readonly
+    >
+    <br>
+    <label for="rqip">required</label>
+    <input
+      id="rqip"
+      type="text"
+      placeholder="필수입력!"
+      required
+    >
+    <br>
+    <label for="dsaip">disabled</label>
+    <input
+      id="dsaip"
+      type="text"
+      placeholder="입력불가, 전송안됨"
+      disabled
+    >
+    <br>
+
+    <fieldset>
+      <legend>과일</legend>
+        <input
+          id="f_apple"
+          name="fruite"
+          value="apple"
+          type="radio"
+        >
+        <label for="f_apple">사과</label>
+
+        <input
+        id="f_grape"
+        name="fruite"
+        value="grape"
+        type="radio"
+      >
+      <label for="f_grape">포도</label>
+
+      <input
+      id="f_orange"
+      name="fruite"
+      value="orange"
+      type="radio"
+      disabled
+    >
+    <label for="f_orange">오렌지(품절)</label>
+    <br>
+    </fieldset>
+    <br>
+    <button type="submit">제출</button>
+  </form>
+  <br><br>
 
   <!-- ------------------------------------------------------------------------------------------------------------ -->
 
-
-
-
-
+  
 </body>
 </html>
