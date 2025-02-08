@@ -2,3 +2,39 @@
   color: green;
 }
 
+.outer {
+  width: 200px;
+  height: 200px;
+  background-color: #eee;
+  border-radius: 20%;
+  overflow: hidden;
+}
+.with-bg {
+  height: 100%;
+  background-image: url(https://showcases.yalco.kr/html-css/02-08/images/mona-lisa.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+
+.background_color1 {
+  width: 200px; height: 200px;
+  background: 
+    linear-gradient(217deg, red, transparent 70%),
+    linear-gradient(127deg, lime, transparent 70%),
+    linear-gradient(336deg, blue, transparent 70%);
+  }
+.background_color2 {
+  width: 200px; height: 200px;
+  background: radial-gradient(gold, tomato)
+}
+.background_color3 {
+  width: 200px; height: 200px;
+  background: repeating-linear-gradient(gold, tomato);
+}
+.background_color4 {
+  width: 200px; height: 200px;
+  background: repeating-radial-gradient(gold, tomato)
+}

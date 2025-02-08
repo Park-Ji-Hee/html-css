@@ -246,12 +246,41 @@ box-shadow:
     : 안쪽으로그림자가 향하게(왼쪽상향방향) , 가로 4px, 세로 4px, 4px 흐리고, 4px만큼 도형보다 작은, 그레이 색깔 그림자 */
 
 ---------------------------------------------------------------------
+/* https://webstoryboy.co.kr/1816  <== 참고할 블로그 */
+background-image: url(이미지주소);    : 배경에 이미지 넣기
+background-position: ;               : 배경 이미지 위치, top==위에서 순서대로 보이기, 50% 50% == center
+background-repaeat: ;                : 배경 이미지 반복 여부
+  /* background-repeat : repeat | repeat-x | repeat-y | no-repeat | space | round */
+background-size: ;                   : 배경 이미지 사이즈를 설정
+
+    /* .outer {
+      width: 200px;
+      height: 200px;
+      background-color: #eee;
+      border-radius: 20%;
+      overflow: hidden;
+    }
+    .with-bg {
+      height: 100%;
+      background-image: url(https://showcases.yalco.kr/html-css/02-08/images/mona-lisa.jpg);
+      background-size: cover;
+      border-radius: 50%;
+      background-position: center;
+    } */
 
 
+background 그라데이션
+  background : linear-gradient (direction|angle, color-stop1, color-stop2, ... );
+  ** ndeg==n도의방향 ==> 45deg = to right top // 90deg = to right
+    /* .background_color {
+      width: 200px; height: 200px;
+      background: 
+        linear-gradient(gold, tomato),          : 위에서 아래 방향, 골드에서 토마토색으로
+        linear-gradient(90deg, gold, tomato),       : 왼->오 방향, 골드에서 토마토색으로
+        linear-gradient(to right, gold, 75%, tomato);  : 왼->오 방향, 골드75%만큼, 골드에서 토마토색으로 
+      } */
 
-
-
-
+      ---------------------------------------------------------------------
 
 
 
