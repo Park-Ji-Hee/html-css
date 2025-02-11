@@ -49,3 +49,34 @@
   top: calc(50% - 40px);
   left: calc(50% - 150px);
 }
+
+.cursor1 {
+  background-color: bisque;
+  cursor: none;
+}
+
+.cursor2 {
+  cursor: default;
+}
+
+.cursor3 {
+  cursor: pointer;
+}
+
+.cursor4 {
+  padding: 24px;
+  background-color: skyblue;
+  cursor: zoom-in;
+  opacity: 0.5;
+  visibility: hidden;
+  display: none;
+}
+
+.cursor5 {
+  padding: 24px;
+  background-color: goldenrod;
+  cursor: not-allowed;
+  opacity: 0.5;
+  visibility: visible;
+  display: inline-block;
+}

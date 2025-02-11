@@ -323,8 +323,85 @@ sticky
  - 같은 값의 요소들 중에는 나중에 배치된 것이 위로 올라오게 됨
 
 ---------------------------------------------------------------------
+cursor 속성
+  cursor: ; : auto, none, pointer, not-allowed, default, zoom-in
+
+요소를 숨기는 3가지 방법
+  opacity
+    - 속성을 0으로 하면 모습 감춤 == 커서 적용가능 + 부피 차지함
+    - 스크린 리더에게 읽힘
+
+  visibility
+    - hidden으로 하면  == 마우스 오버 효과나 포커스, 클릭 등도 무효하게 됨
+    - 스크린 리더에게도 읽히지 않게 됨
+
+  display
+    - none으로 하면 == oppacity=0 + visibility=hidden + 부피차지 안함 
+
+---------------------------------------------------------------------
+
+flexbox
+*** height: 100vh;                  : vh(viewport heigh) 사용 중인 화면(뷰포트)의 전체 높이를 기준으로 비율
+                                      100vh -> 요소가 화면 높이 전체를 차지하도록 만듬 / 전체 높이(100%)와 동일 / 창의 높이에 따라 동적으로 크기가 조정
+
+    : https://studiomeal.com/archives/197
+    display: flex;                 : 해당 부분 안에 아이템만 다닥 붙음
+    display: flex-box;             : 해당 부분 전체 범위가 같이 flex하게 움직임
+
+    gap: 1rem;                     : 해당 부분 안에 아이템 간의 간격
+
+    inline-flex;                   : 
+    inline-flexbox;                : 
+
+    order : ;                      :  display:flex; 설정 후 oreder값으로 위치변경 // 기본값은 0임 
+
+    flex-direction : ;             :  flex 방향을 세로/가로 중에 선택
+      row;                         ->  요소들을 텍스트의 방향과 동일하게 정렬합니다.
+      row-reverse;                 ->  요소들을 텍스트의 반대 방향으로 정렬합니다.
+      column;                      -> 요소들을 위에서 아래로 정렬합니다.
+      column-reverse;              -> 요소들을 아래에서 위로 정렬합니다.
+
+    flex-basis : 10px;             : 설정한 axis 방향에 따라 10px만큼 간격을 둔다
+      영향력 : flex-basis < width < max-width, min-width
+    flex-grow: ;                   : Flex Container에 공간이 남을 경우 Flex Item의 flex-basis 크기가 얼마나 더 할당 가능한지 나타내는 속성
+    flex-shrink: ;                 : Flex Container에 공간이 부족해질 때 Flex Item의 axis 방향 크기가 얼마나 줄어들 수 있는지 지정하는 값
+    flex: 1 1 0;                   : grow shrink basis 순서
+
+    justify-content : ;            : 메인축을 따라 정렬을 정의하는 프로퍼티
+      flex-start;                  -> 요소들을 컨테이너의 왼쪽으로 정렬합니다.
+      flex-end;                    -> 요소들을 컨테이너의 오른쪽으로 정렬합니다.
+      center;                      -> 요소들을 컨테이너의 가운데로 정렬합니다.
+      space-between;               -> 요소들 사이에 동일한 간격을 둡니다.
+      space-around;                -> 요소들 주위에 동일한 간격을 둡니다.
+
+    align-items : ;                : 메인축의 수직축를 따라 정렬되는 방식을 정의하는 프로퍼티
+      flex-start;                  -> 요소들을 컨테이너의 꼭대기로 정렬합니다.
+      flex-end;                    -> 요소들을 컨테이너의 바닥으로 정렬합니다.
+      center;                      -> 요소들을 컨테이너의 세로선 상의 가운데로 정렬합니다.
+      baseline;                    -> 요소들을 컨테이너의 시작 위치에 정렬합니다.
+      stretch;                     -> 요소들을 컨테이너에 맞도록 늘립니다.
+
+    align-self : ;                 : 개별 요소에 적용할 수 있는 또 다른 속성
+
+    align-content : ;              : 여러 줄들 사이의 간격
+      flex-start;                  -> 여러 줄들을 컨테이너의 꼭대기에 정렬합니다.
+      flex-end;                    -> 여러 줄들을 컨테이너의 바닥에 정렬합니다.
+      center;                      -> 여러 줄들을 세로선 상의 가운데에 정렬합니다.
+      space-between;               -> 여러 줄들 사이에 동일한 간격을 둡니다.
+      space-around;                -> 여러 줄들 주위에 동일한 간격을 둡니다.
+      stretch;                     -> 여러 줄들을 컨테이너에 맞도록 늘립니다.
+
+    flex-wrap : ;                  : 정렬 정
+      nowrap;                      -> 모든 요소들을 한 줄에 정렬합니다.
+      wrap;                        -> 요소들을 여러 줄에 걸쳐 정렬합니다.
+      wrap-reverse;                -> 요소들을 여러 줄에 걸쳐 반대로 정렬합니다.
+    flex-flow : ;                  : flex-direction + flex-wrap ==> flex-flow: row wrap
+
+---------------------------------------------------------------------
 
 
 
+
+---------------------------------------------------------------------
 
 
