@@ -80,3 +80,21 @@
   visibility: visible;
   display: inline-block;
 }
+
+.flexbpox1 {
+  display: inline-flex;
+  background-color: yellow;
+  flex-grow: 1;
+}
+
+.flexbpox2 {
+  display: inline-flex;
+  background-color: yellow;
+  flex-grow: 9;
+}
+
+.flexbox3 {
+  display: flex;
+  background-color: skyblue;
+  
+}

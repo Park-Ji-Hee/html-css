@@ -341,8 +341,8 @@ cursor 속성
 ---------------------------------------------------------------------
 
 flexbox
-*** height: 100vh;                  : vh(viewport heigh) 사용 중인 화면(뷰포트)의 전체 높이를 기준으로 비율
-                                      100vh -> 요소가 화면 높이 전체를 차지하도록 만듬 / 전체 높이(100%)와 동일 / 창의 높이에 따라 동적으로 크기가 조정
+*** height: 100vh;   : vh(viewport heigh) 사용 중인 화면(뷰포트)의 전체 높이를 기준으로 비율
+            100vh    -> 요소가 화면 높이 전체를 차지하도록 만듬 / 전체 높이(100%)와 동일 / 창의 높이에 따라 동적으로 크기가 조정
 
     : https://studiomeal.com/archives/197
     display: flex;                 : 해당 부분 안에 아이템만 다닥 붙음
@@ -356,10 +356,10 @@ flexbox
     order : ;                      :  display:flex; 설정 후 oreder값으로 위치변경 // 기본값은 0임 
 
     flex-direction : ;             :  flex 방향을 세로/가로 중에 선택
-      row;                         ->  요소들을 텍스트의 방향과 동일하게 정렬합니다.
-      row-reverse;                 ->  요소들을 텍스트의 반대 방향으로 정렬합니다.
-      column;                      -> 요소들을 위에서 아래로 정렬합니다.
-      column-reverse;              -> 요소들을 아래에서 위로 정렬합니다.
+      row;                          - 요소들을 텍스트의 방향과 동일하게 정렬합니다.
+      row-reverse;                  - 요소들을 텍스트의 반대 방향으로 정렬합니다.
+      column;                       - 요소들을 위에서 아래로 정렬합니다.
+      column-reverse;               - 요소들을 아래에서 위로 정렬합니다.
 
     flex-basis : 10px;             : 설정한 axis 방향에 따라 10px만큼 간격을 둔다
       영향력 : flex-basis < width < max-width, min-width
@@ -367,14 +367,14 @@ flexbox
     flex-shrink: ;                 : Flex Container에 공간이 부족해질 때 Flex Item의 axis 방향 크기가 얼마나 줄어들 수 있는지 지정하는 값
     flex: 1 1 0;                   : grow shrink basis 순서
 
-    justify-content : ;            : 메인축을 따라 정렬을 정의하는 프로퍼티
+    justify-content : ;            : 메인축을 따라 정렬
       flex-start;                   - 요소들을 컨테이너의 왼쪽으로 정렬
       flex-end;                     - 요소들을 컨테이너의 오른쪽으로 정렬
       center;                       - 요소들을 컨테이너의 가운데로 정렬
       space-between;                - 요소들 사이에 동일한 간격 둠
       space-around;                  - 요소들 주위에 동일한 간격 둠
 
-    align-items : ;                : 메인축의 수직축를 따라 정렬되는 방식을 정의하는 프로퍼티
+    align-items : ;                : 메인축의 수직축를 따라 정렬
       flex-start;                   - 요소들을 컨테이너의 꼭대기로 정렬
       flex-end;                     - 요소들을 컨테이너의 바닥으로 정렬
       center;                       - 요소들을 컨테이너의 세로선 상의 가운데로 정렬
@@ -394,7 +394,7 @@ flexbox
     flex-wrap : ;                  : 정렬 정
       nowrap;                       - 모든 요소들을 한 줄에 정렬
       wrap;                         - 요소들을 여러 줄에 걸쳐 정렬
-      wrap-reverse;                 - 요소들을 여러 줄에 걸쳐 반대로 정렬
+      wrap-reverse;                 - 요소들을 여러 줄에 걸쳐 반대로 정렬 ********
     flex-flow : ;                  : flex-direction + flex-wrap ==> flex-flow: row wrap
 
 ---------------------------------------------------------------------
