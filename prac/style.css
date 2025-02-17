@@ -164,29 +164,36 @@ dl > dd:not(:last-child)::after {
   opacity: 0.5;
 }
 
-/* before
-button {
+.page-button button {
   margin: 0 8px;
   font-size: 1.5em;
   border: 0;
   color: gray;
   background-color: transparent;
   cursor: pointer;
-} */
+}
 
-/* after */
-.page-buttons {
-  margin: 0 8px;
-  font-size: 1.5em;
-  border: 0;
-  color: gray;
-  background-color: transparent;
-  cursor: pointer;
-}
-button.current {
-  font-weight: bold;
-  color: slateblue;
-}
+/* ----------------------------------- */
+
+
+
+
+
+/* ----------------------------------- */
+
+
+
+
+
+/* ----------------------------------- */
+
+
+
+
+
+/* ----------------------------------- */
+
+
 
 
 /* ----------------------------------- */
